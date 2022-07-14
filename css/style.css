@@ -1,4 +1,8 @@
-.h-nav{
+.center {
+    text-align: center;
+}
+
+.h-nav {
     width: 100%;
     position: relative;
     z-index: 2;
@@ -6,7 +10,7 @@
     background-color: dimgrey;
 }
 
-.h-nav-ul{
+.h-nav-ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,26 +18,42 @@
     list-style: none;
 }
 
-.h-nav-li{
+.h-nav-li, .h-nav-li-2 {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.h-nav-a{
+.h-nav-li-3{
+    display: none;
+}
+
+.h-nav-menu{
+    /* display: none; */
+    cursor: pointer;
+}
+
+.h-nav-menu-line{
+    width: 2em;
+    height: 1px;
+    background-color: var(--white);
+    margin: .5em;
+}
+
+.h-nav-a {
     display: inline-block;
     /* max-width: 100%; */
     height: 4em;
     width: 4em;
 }
 
-.h-nav-img{
+.h-nav-img {
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
-.h-nav-a-socials{
+.h-nav-a-socials {
     display: inline-block;
     /* max-width: 100%; */
     height: 1.5em;
@@ -41,20 +61,21 @@
     margin: 0 .8em;
 }
 
-.h-nav-img-socials{
+.h-nav-img-socials {
     object-fit: contain;
     width: 100%;
     height: 100%;
-    filter: invert(100%);;
+    filter: invert(100%);
+    ;
 }
 
-.h-content{
+.h-content {
     padding: 3vw 4vw;
     background-color: var(--black);
     color: var(--white);
 }
 
-.h-title{
+.h-title {
     font-family: var(--font);
     font-weight: 500;
     text-align: center;
@@ -63,7 +84,7 @@
     margin-bottom: 1em;
 }
 
-.h-section-line{
+.h-section-line {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,16 +92,12 @@
     margin: 2em 0;
 }
 
-.backwards{
-    flex-direction: row-reverse;
-}
-
-.h-print{
+.h-print {
     width: 45%;
     height: auto;
 }
 
-.h-section-text{
+.h-section-text {
     max-width: 45%;
     height: 100%;
     display: flex;
@@ -90,28 +107,162 @@
     margin: auto 0;
 }
 
-.m-bot{
+.m-bot {
     margin-bottom: 1em;
 }
 
-.h-subtitle{
+.h-subtitle {
     font-family: var(--font);
-    font-size: 2em;
+    font-size: 2.1em;
     font-weight: 400;
 }
 
-.h-text{
+.h-text {
     font-family: var(--font);
-    font-size: .9em;
+    font-size: .85em;
     font-weight: 300;
-    line-height: 2em;
+    line-height: 1.5em;
+    /* width: 100%; */
 }
 
-.h-list{
+.h-list {
     margin-left: 2.5em;
 }
 
-.yt-video{
+.yt-video {
     width: 100%;
     height: 100vh;
+}
+
+.h-header-yt {
+    width: 100%;
+    height: 100vh;
+}
+
+.h-header-iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+.h-platforms {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 2em 1em;
+    margin: 2.5em 0;
+}
+
+.h-platform-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reveal {
+    position: relative;
+    /* transform: scale(0); */
+    opacity: 0;
+    transition: .8s all ease;
+}
+
+.reveal.active {
+    /* transform: scale(1); */
+    opacity: 1;
+}
+
+.reveal.left {
+    transform: translateX(-50px);
+}
+
+.reveal.right {
+    transform: translateX(50px);
+}
+
+.reveal.scale {
+    transform: scale(0);
+}
+
+.reveal.left.active {
+    transform: translateX(0);
+}
+
+.reveal.right.active {
+    transform: translateX(0);
+}
+
+.reveal.scale.active {
+    transform: scale(1);
+}
+
+.h-dlcs {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 2%;
+}
+
+.h-dlc-card {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-rows: 5vh 40vh 15vh;
+    gap: 2vh 0;
+    justify-content: center;
+}
+
+.h-bold-text {
+    font-weight: 600;
+    font-family: var(--font);
+    font-size: 1em;
+}
+
+.h-dlc-card-img {
+    width: 20vw;
+    height: auto;
+}
+
+.h-btn {
+    background-color: var(--white);
+    padding: 1.5em 2em;
+    transition: .3s ease-in-out;
+}
+
+.h-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.h-btn-text {
+    font-family: var(--font);
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1025px) {
+    .h-nav-li-2{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        /* fill: black; */
+        padding-bottom: 15vh;
+    }
+    /* .h-nav-li-2 .h-text{
+        color: black;
+    } */
+    .h-nav-li-3{
+        display: flex;
+    }
 }
