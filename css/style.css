@@ -1,268 +1,337 @@
+/* Classes Gerais */
 .center {
-    text-align: center;
+  text-align: center;
 }
 
+.backwards {
+    flex-direction: row-reverse;
+}
+
+/* NavBar */
 .h-nav {
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    padding: 3vw 4vw;
-    background-color: dimgrey;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 3vw 4vw;
+  background-color: dimgrey;
 }
 
 .h-nav-ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
 }
 
-.h-nav-li, .h-nav-li-2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.h-nav-li,
+.h-nav-li-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.h-nav-li-3{
-    display: none;
+.h-nav-li-3 {
+  display: none;
 }
 
-.h-nav-menu{
-    /* display: none; */
-    cursor: pointer;
+.h-nav-menu {
+  /* display: none; */
+  cursor: pointer;
 }
 
-.h-nav-menu-line{
-    width: 2em;
-    height: 1px;
-    background-color: var(--white);
-    margin: .5em;
+.h-nav-menu-line {
+  width: 2em;
+  height: 1px;
+  background-color: var(--white);
+  margin: 0.5em;
 }
 
 .h-nav-a {
-    display: inline-block;
-    /* max-width: 100%; */
-    height: 4em;
-    width: 4em;
+  display: inline-block;
+  /* max-width: 100%; */
+  height: 4em;
+  width: 4em;
 }
 
 .h-nav-img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .h-nav-a-socials {
-    display: inline-block;
-    /* max-width: 100%; */
-    height: 1.5em;
-    width: 1.5em;
-    margin: 0 .8em;
+  display: inline-block;
+  /* max-width: 100%; */
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0 0.8em;
 }
 
 .h-nav-img-socials {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    filter: invert(100%);
-    ;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
 }
 
+/* Conteúdo Geral */
 .h-content {
-    padding: 3vw 4vw;
-    background-color: var(--black);
-    color: var(--white);
+  padding: 3vw 4vw;
+  background-color: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
 }
 
+/* Primeira Parte - Descend Into the Dark */
 .h-title {
-    font-family: var(--font);
-    font-weight: 500;
-    text-align: center;
-    font-size: 2.5em;
-    letter-spacing: 1px;
-    margin-bottom: 1em;
+  font-family: var(--font);
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
 }
 
 .h-section-line {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em 0;
 }
 
 .h-print {
-    width: 45%;
-    height: auto;
+  width: 45%;
+  height: auto;
 }
 
 .h-section-text {
-    max-width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: auto 0;
+  max-width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto 0;
 }
 
 .m-bot {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .h-subtitle {
-    font-family: var(--font);
-    font-size: 2.1em;
-    font-weight: 400;
+  font-family: var(--font);
+  font-size: 2.1em;
+  font-weight: 400;
 }
 
 .h-text {
-    font-family: var(--font);
-    font-size: .85em;
-    font-weight: 300;
-    line-height: 1.5em;
-    /* width: 100%; */
+  font-family: var(--font);
+  font-size: 0.85em;
+  font-weight: 300;
+  line-height: 1.5em;
+  /* width: 100%; */
 }
 
 .h-list {
-    margin-left: 2.5em;
+  margin-left: 2.5em;
 }
 
+/* Parte do Trailer do YT */
 .yt-video {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  max-height: 100vh;
+  aspect-ratio: 16 / 9;
+  margin: 2vh 0;
 }
 
 .h-header-yt {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .h-header-iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
 }
 
+/* Links para comprar */
 .h-platforms {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    gap: 2em 1em;
-    margin: 2.5em 0;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 45% 45%;
+  gap: 8% 3%;
+  margin: 2.5em 0;
 }
 
 .h-platform-cell {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.h-platform-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.h-platform-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Animações */
 .reveal {
-    position: relative;
-    /* transform: scale(0); */
-    opacity: 0;
-    transition: .8s all ease;
+  position: relative;
+  opacity: 0;
+  transition: 0.8s all ease-in-out;
 }
 
 .reveal.active {
-    /* transform: scale(1); */
-    opacity: 1;
+  opacity: 1;
 }
 
 .reveal.left {
-    transform: translateX(-50px);
+  transform: translateX(-50px);
 }
 
 .reveal.right {
-    transform: translateX(50px);
+  transform: translateX(50px);
 }
 
 .reveal.scale {
-    transform: scale(0);
+  transform: scale(0);
 }
 
 .reveal.left.active {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .reveal.right.active {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .reveal.scale.active {
-    transform: scale(1);
+  transform: scale(1);
 }
 
+/* DLCs */
 .h-dlcs {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
-    margin-top: 5vh;
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    gap: 2%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 60vh;
+  flex: 0 2 auto;
+  margin: 2vh 0;
 }
 
 .h-dlc-card {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; */
-    display: grid;
-    grid-template-rows: 5vh 40vh 15vh;
-    gap: 2vh 0;
-    justify-content: center;
+  display: grid;
+  grid-template-rows: 3vw 20vw 10vw;
+  gap: 2vw 2vh;
+  justify-content: center;
+  text-align: center;
+  margin: 5vh 0;
 }
 
 .h-bold-text {
-    font-weight: 600;
-    font-family: var(--font);
-    font-size: 1em;
+  font-weight: 600;
+  font-family: var(--font);
+  font-size: 1em;
 }
 
 .h-dlc-card-img {
-    width: 20vw;
-    height: auto;
+  width: auto;
+  height: 20vw;
+  object-fit: contain;
+}
+
+.h-dlc-card-text {
+  vertical-align: top;
+  max-width: 20vw;
+  justify-self: center;
 }
 
 .h-btn {
-    background-color: var(--white);
-    padding: 1.5em 2em;
-    transition: .3s ease-in-out;
+  background-color: var(--white);
+  padding: 1.5em 2em;
+  transition: 0.3s ease-in-out;
 }
 
 .h-btn:hover {
-    cursor: pointer;
-    opacity: 0.5;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .h-btn-text {
-    font-family: var(--font);
-    color: var(--black);
-    letter-spacing: 1px;
+  font-family: var(--font);
+  color: var(--black);
+  letter-spacing: 1px;
 }
 
+/* Responsividade da NavBar */
 @media (max-width: 1025px) {
-    .h-nav-li-2{
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: white;
-        /* fill: black; */
-        padding-bottom: 15vh;
-    }
-    /* .h-nav-li-2 .h-text{
-        color: black;
-    } */
-    .h-nav-li-3{
-        display: flex;
-    }
+  .h-nav-li-2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    /* fill: black; */
+    padding-bottom: 15vh;
+  }
+  .h-nav-li-3 {
+    display: flex;
+  }
+}
+
+/* Responsividade das DLCs e da Sessão "Visit Our Friends", junto com as Plataformas */
+@media screen and (max-width: 770px) {
+  .h-platforms {
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 30% 30% 30%;
+    gap: 3% 8%;
+  }
+  .h-dlcs {
+    flex-direction: column;
+  }
+  .h-dlc-card{
+    grid-template-rows: 8vw 230px 15vw;
+    /* gap: 0 0; */
+  }
+  .h-dlc-card-img {
+    height: auto;
+    width: 35vw;
+    min-width: 230px;
+  }
+  .h-dlc-card-text{
+    max-width: 35vw;
+    min-width: 230px;
+  }
+}
+
+/* Responsividade das Sessões com texto e imagem lado a lado */
+@media (max-width: 470px) {
+  .h-section-line {
+    flex-direction: column;
+  }
+  .h-print {
+    width: 90%;
+  }
+  .h-section-text {
+    max-width: 90%;
+    margin: 5vh 0;
+  }
+  .backwards{
+    flex-direction: column;
+  }
 }
