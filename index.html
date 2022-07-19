@@ -13,6 +13,13 @@
 
     <link rel="stylesheet" href="./css/global-style.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d08d66d5b5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script src="./js/gallery.js" defer></script> -->
   </head>
 
   <body>
@@ -62,14 +69,13 @@
       </nav>
 
       <!-- Header com Vídeo -->
-      <!-- <div class="h-header-yt">
-            <iframe id="player" style="position: absolute; inset: -50.7812px 0px 0px; width: 929px; height: 522.562px;"
-                frameborder="0" allowfullscreen="1"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                title="Hollow Knight Website Header" width="640" height="360"
-                src="https://www.youtube.com/embed/NhG6PA9Xoog?autohide=1&autoplay=0&contro…owinfo=0&wmode=opaque&origin=https%3A%2F%2Fwww.hollowknight.com&widgetid=1"
-                class="background-video ready">…</iframe>
-        </div> -->
+      <div class="h-header-yt">
+        <iframe
+          class="h-header-iframe"
+          src="https://www.youtube.com/embed/NhG6PA9Xoog?controls=0&autoplay=1&mute=1&loop=1&playlist=NhG6PA9Xoog"
+        ></iframe>
+        <div class="h-header-front"></div>
+      </div>
 
       <!-- Conteúdo -->
       <div class="h-content">
@@ -327,9 +333,13 @@
                 a majestic civilisation brought to ruin.
               </p>
 
-              <button class="h-btn">
+              <a
+                href="https://christopherlarkin.bandcamp.com/album/hollow-knight-original-soundtrack"
+                target="_blank"
+                class="h-btn"
+              >
                 <p class="h-btn-text">Purchase the Official Soundtrack</p>
-              </button>
+              </a>
             </div>
 
             <img
@@ -337,6 +347,242 @@
               src="./img/components/soundtrack.jpg"
               alt="A Haunting, Orchestral Score"
             />
+          </div>
+        </div>
+
+        <div class="section-4">
+          <div class="h-gallery reveal">
+            <div class="h-gallery-control h-gallery-control-last">
+              <a class="h-gallery-button h-gallery-button-last">
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+            </div>
+            <ul class="h-gallery-list">
+              <li class="h-galley-item active" id="h-gallery-item-1">
+                <img
+                  src="./img/prints/gallery-1.jpg"
+                  alt="Gallery Item"
+                  class="h-gallery-img"
+                />
+              </li>
+              <li class="h-galley-item" id="h-gallery-item-2">
+                <img
+                  src="./img/prints/gallery-2.jpg"
+                  alt="Gallery Item"
+                  class="h-gallery-img"
+                />
+              </li>
+              <li class="h-galley-item" id="h-gallery-item-3">
+                <img
+                  src="./img/prints/gallery-3.jpg"
+                  alt="Gallery Item"
+                  class="h-gallery-img"
+                />
+              </li>
+              <li class="h-galley-item" id="h-gallery-item-4">
+                <img
+                  src="./img/prints/gallery-4.jpg"
+                  alt="Gallery Item"
+                  class="h-gallery-img"
+                />
+              </li>
+              <li class="h-galley-item" id="h-gallery-item-5">
+                <img
+                  src="./img/prints/gallery-5.jpg"
+                  alt="Gallery Item"
+                  class="h-gallery-img"
+                />
+              </li>
+            </ul>
+            <div class="h-gallery-control h-gallery-control-next">
+              <a class="h-gallery-button h-gallery-button-next">
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-5">
+          <h3 class="h-subtitle center">Visit our Friends</h3>
+
+          <div class="h-friends">
+            <div class="h-friends-card">
+              <img
+                class="h-friends-img"
+                src="./img/components/fan-gamer.png"
+                alt="FanGamer"
+              />
+              <p class="h-text center">
+                Plush Grubs! Plush Knights! Rad Tees and so much more!
+              </p>
+              <a
+                href="https://www.fangamer.com/collections/hollow-knight"
+                target="_blank"
+                class="h-btn"
+              >
+                <p class="h-btn-text">BROWSE FANGAMER.COM</p>
+              </a>
+            </div>
+            <div class="h-friends-card">
+              <img
+                class="h-friends-img"
+                src="./img/components/the-yetee.png"
+                alt="The Yetee"
+              />
+              <p class="h-text center">
+                Classy Tees! Stylish Pins! The coolest, friendliest yetee we
+                know!
+              </p>
+              <a
+                href="https://theyetee.com/collections/hollow-knight"
+                target="_blank"
+                class="h-btn"
+              >
+                <p class="h-btn-text">BROWSE THEYETEE.COM</p>
+              </a>
+            </div>
+            <div class="h-friends-card">
+              <img
+                class="h-friends-img"
+                src="./img/components/ghost-ramp.png"
+                alt="Ghost Ramp"
+              />
+              <p class="h-text center">Limited Vinyl Releases!</p>
+              <a
+                href="https://store.ghostramp.com/password"
+                target="_blank"
+                class="h-btn"
+              >
+                <p class="h-btn-text">BROWSE GHOST-RAMP.COM</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-6 m-bot">
+          <h3 class="h-subtitle center">PRESS COVERAGE</h3>
+
+          <div class="h-section-line">
+            <div class="h-section-text">
+              <h3 class="h-subtitle m-bot">Praise for Hollow Knight</h3>
+              <p class="h-text m-bot">
+                “It's a deep dive into a dark place, and a brilliantly rich
+                experience.”
+              </p>
+              <ul class="h-list">
+                <li>
+                  <p class="h-text">9/10 Game Informer</p>
+                </li>
+              </ul>
+              <p class="h-text m-bot">
+                “Truly a masterpiece of gaming if there ever was one, and
+                certainly art worthy of being in a museum.”
+              </p>
+              <ul class="h-list">
+                <li>
+                  <p class="h-text">10/10 Destructoid</p>
+                </li>
+              </ul>
+              <p class="h-text m-bot">
+                “Best Platformer 2017 - The joy of Hollow Knight is the joy of
+                discovery, always hard-earned, never handed to you.”
+              </p>
+              <ul class="h-list">
+                <li>
+                  <p class="h-text">92/100 PC Gamer</p>
+                </li>
+              </ul>
+            </div>
+
+            <img
+              class="h-print"
+              src="./img/components/awards.png"
+              alt="Awards"
+            />
+          </div>
+
+          <hr />
+
+          <div class="h-section-line">
+            <img src="./img/components/press-kit.png" alt="Press Kit" />
+            <div class="h-section-text">
+              <p class="h-text m-bot">
+                If you'd like to write about Hollow Knight, we've a Press Kit
+                full of videos, facts and images.
+              </p>
+              <p class="h-text m-bot">
+                For any additional press enquiries, please contact: press (at)
+                teamcherry.com.au
+              </p>
+              <a
+                href="https://drive.google.com/drive/folders/1SPCRaalJJepKYOQ4fdxZEzqNukJiUQCo"
+                target="_blank"
+                class="h-btn"
+              >
+                <p class="h-btn-text">VISIT THE PRESS KIT</p>
+              </a>
+            </div>
+          </div>
+
+          <img
+            class="center"
+            src="./img/components/esrb.png"
+            alt="ESRB Classification"
+          />
+        </div>
+
+        <div class="section-7">
+          <div class="h-unity-made">
+            <a
+              class="center m-bot"
+              href="https://unity.com/madewith/hollow-knight"
+              target="_blank"
+            >
+              <img
+                class="center"
+                src="./img/components/made-with-unity.png"
+                alt="Made with Unity"
+              />
+            </a>
+
+            <p class="h-text center m-bot">
+              Learn about the methods we used to make Hollow Knight, and about
+              the engine under-pinning the whole game.
+            </p>
+
+            <a
+              href="https://drive.google.com/drive/folders/1SPCRaalJJepKYOQ4fdxZEzqNukJiUQCo"
+              target="_blank"
+              class="h-btn"
+            >
+              <p class="h-btn-text">DETAILS</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="section-8">
+          <div class="h-team-cherry center">
+            <img src="./img/components/team-cherry.png" alt="Team Cherry" />
+
+            <br />
+
+            <a
+              href="https://www.teamcherry.com.au/"
+              target="_blank"
+              class="h-btn"
+            >
+              <p class="h-btn-text cherry-text">Visit the Team Cherry Site</p>
+            </a>
+
+            <p class="h-text">
+              Hollow Knight is being developed by Team Cherry in Adelaide, South
+              Australia. We're a team of 3 people who, alongside making the
+              game, are responsible for building these websites, cutting those
+              game trailers, posting regular game updates, answering questions
+              on social media and much more. Though it's a lot of work, we love
+              doing it, and it's made even more enjoyable by the enthusiastic
+              support we've received from fans this whole way.
+            </p>
           </div>
         </div>
       </div>
